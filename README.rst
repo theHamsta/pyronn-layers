@@ -15,9 +15,9 @@ This is a Python wrapper around `PYRO-NN-Layers <https://github.com/csyben/PYRO-
 
 It uses `pystencils-autodiff <https://github.com/pycodegen/pystencils_autodiff>`_ to automatically compile the C++/CUDA source files.
 If you prefer pre-build versions of PYRO-NN-Layers go to the `Release page of PYRO-NN-Layers <https://github.com/csyben/PYRO-NN-Layers/releases>`_
-or download the latest artifacts from our CI:
+or download the latest artifacts from our CI (links only working if pipeline badge above is green):
 
-   * `Ubuntu, tensorflow_gpu-1.14.0-cp37-cp37m-manylinux1_x86_64.whl <https://i10git.cs.fau.de/seitz/pyronn-layers/builds/artifacts/master/download?job=full>`_
+   * `pyronn-layers.so for Ubuntu, tensorflow_gpu-1.14.0-cp37-cp37m-manylinux1_x86_64.whl <https://i10git.cs.fau.de/seitz/pyronn-layers/builds/artifacts/master/download?job=full>`_
 
 
 Requirements
