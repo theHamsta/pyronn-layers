@@ -37,5 +37,6 @@ Requirements
 ------------
 
 You have a functioning toolchain for NVCC installed.
-`nvcc` must be available in `PATH`.
-If compilation fails you can change the selected compiler: http://pycodegen.pages.walberla.net/pystencils/sphinx/configuration.html?highlight=compiler
+``nvcc`` must be available in ``PATH``.
+If compilation fails, you can change the selected compiler:
+http://pycodegen.pages.walberla.net/pystencils/sphinx/configuration.html?highlight=compiler
