@@ -1,5 +1,5 @@
-.. image:: https://badge.fury.io/py/pyron-layers.svg
-   :target: https://badge.fury.io/py/pyron-layers
+.. image:: https://badge.fury.io/py/pyronn-layers.svg
+   :target: https://badge.fury.io/py/pyronn-layers
    :alt: PyPI version
 
 .. image:: https://i10git.cs.fau.de/seitz/pyronn-layers/badges/master/pipeline.svg 
