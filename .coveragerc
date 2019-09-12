@@ -2,7 +2,7 @@
 [run]
 branch = True
 source = pyronn_layers
-# omit = bad_file.py
+omit = src/pyronn_layers/PYRO-NN-Layers/*
 
 [paths]
 source =
