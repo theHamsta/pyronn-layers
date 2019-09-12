@@ -18,7 +18,7 @@ Install it via
 
    pip install pyronn-layers
 
-Or if you downloaded this `repository <https://github.com/theHamsta/pyronn.layers.git>`
+Or if you downloaded this `repository <https://github.com/theHamsta/pyronn.layers.git>`_
 
 .. code:: bash
 
@@ -30,7 +30,7 @@ The code gets automatically recompiled if you make changes to the source files i
 If you prefer pre-build versions of PYRO-NN-Layers go to the `Release page of PYRO-NN-Layers <https://github.com/csyben/PYRO-NN-Layers/releases>`_
 or download the latest artifacts from our CI (links only working if pipeline badge above is green):
 
-   * `pyronn-layers.so for Ubuntu, tensorflow_gpu-1.14.0-cp37-cp37m-manylinux1_x86_64.whl <https://i10git.cs.fau.de/seitz/pyronn-layers/builds/artifacts/master/download?job=full>`_
+  - `pyronn-layers.so for Ubuntu, tensorflow_gpu-1.14.0-cp37-cp37m-manylinux1_x86_64.whl <https://i10git.cs.fau.de/seitz/pyronn-layers/builds/artifacts/master/download?job=full>`_
 
 
 Requirements
