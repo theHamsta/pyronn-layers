@@ -19,11 +19,11 @@ finally:
 
 _pyronn_layers_dir = os.path.join(os.path.dirname(__file__), '..', '..', 'PYRO-NN-Layers')
 _pyronn_layers_sources = glob.glob(os.path.join(_pyronn_layers_dir, '*.cc'))
-print(',\n'.join(_pyronn_layers_sources))
+
 _pyronn_layers_module = pystencils_autodiff.tensorflow_jit.compile_sources_and_load(
     [],
     _pyronn_layers_sources,
-    additional_compile_flags=['-I' + _pyronn_layers_dir, '-DGOOGLE_CUDA'])
+    additional_compile_flags=['-I' + _pyronn_layers_dir, '-DGOOGLE_CUDA'])  # TODO: msvc! \D
 
 for obj in dir(_pyronn_layers_module):
     setattr(pyronn_layers, obj, getattr(_pyronn_layers_module, obj))
