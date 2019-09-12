@@ -11,9 +11,22 @@ pyronn-layers
 =============
 
 
-This is a Python wrapper around `PYRO-NN-Layers <https://github.com/csyben/PYRO-NN-Layers>`_
+This is a Python wrapper around `PYRO-NN-Layers <https://github.com/csyben/PYRO-NN-Layers>`_.
+Install it via
+
+.. code:: bash
+
+   pip install pyronn-layers
+
+Or if you downloaded this `repository <https://github.com/theHamsta/pyronn.layers.git>`
+
+.. code:: bash
+
+   pip install -e .
 
 It uses `pystencils-autodiff <https://github.com/pycodegen/pystencils_autodiff>`_ to automatically compile the C++/CUDA source files.
+The code gets automatically recompiled if you make changes to the source files in the folder PYRO-NN-Layers.
+
 If you prefer pre-build versions of PYRO-NN-Layers go to the `Release page of PYRO-NN-Layers <https://github.com/csyben/PYRO-NN-Layers/releases>`_
 or download the latest artifacts from our CI (links only working if pipeline badge above is green):
 
