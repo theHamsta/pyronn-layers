@@ -7,9 +7,10 @@ full:
   script:
     - python -m pip install -e .
     - python setup.py test
+    - python -c 'import pyronn_layers'
   tags:
     - docker
-  artifacts:
-    when: always
-    paths:
-      - htmlcov
+  #artifacts:
+    #when: always
+    #paths:
+      #- htmlcov
