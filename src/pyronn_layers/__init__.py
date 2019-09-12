@@ -20,6 +20,8 @@ finally:
 _pyronn_layers_dir = os.path.join(os.path.dirname(__file__), '..', '..', 'PYRO-NN-Layers')
 _pyronn_layers_sources = glob.glob(os.path.join(_pyronn_layers_dir, '*.cc'))
 
+assert _pyronn_layers_sources, "Could not find the source files of PYRO-NN-Layers. Did you checkout the Git submodule?"
+
 _pyronn_layers_module = pystencils_autodiff.tensorflow_jit.compile_sources_and_load(
     [],
     _pyronn_layers_sources,
