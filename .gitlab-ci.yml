@@ -11,7 +11,7 @@ full:
     - python setup.py test
   tags:
     - docker
-  #artifacts:
-    #when: always
-    #paths:
-      #- htmlcov
+    - cuda
+  artifacts:
+    paths:
+      - 'pyronn_layers.so'

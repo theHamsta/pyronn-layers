@@ -2,6 +2,7 @@
 import glob
 import os.path
 
+import tensorflow as tf
 from pkg_resources import DistributionNotFound, get_distribution
 
 import pyronn_layers
@@ -24,10 +25,12 @@ assert _pyronn_layers_sources, "Could not find the source files of PYRO-NN-Layer
     "Did you check out the Git submodule (`git submodule update --init --recursive`)?"
 
 
-_pyronn_layers_module = pystencils_autodiff.tensorflow_jit.compile_sources_and_load(
+_pyronn_layers_module_file = pystencils_autodiff.tensorflow_jit.compile_sources_and_load(
     [],
     _pyronn_layers_sources,
-    additional_compile_flags=['-I' + _pyronn_layers_dir, '-DGOOGLE_CUDA'])  # TODO: msvc! \D
+    additional_compile_flags=['-I' + _pyronn_layers_dir, '-DGOOGLE_CUDA'],
+    compile_only=True)  # TODO: msvc! \D
+_pyronn_layers_module = tf.load_op_library(_pyronn_layers_module_file)
 
 for obj in dir(_pyronn_layers_module):
     setattr(pyronn_layers, obj, getattr(_pyronn_layers_module, obj))
