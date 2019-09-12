@@ -2,11 +2,11 @@
 import glob
 import os.path
 
+import pystencils_autodiff.tensorflow_jit
 import tensorflow as tf
 from pkg_resources import DistributionNotFound, get_distribution
 
 import pyronn_layers
-import pystencils_autodiff.tensorflow_jit
 
 try:
     # Change here if project is renamed and does not equal the package name
@@ -18,7 +18,7 @@ finally:
     del get_distribution, DistributionNotFound
 
 
-_pyronn_layers_dir = os.path.join(os.path.dirname(__file__), '..', '..', 'PYRO-NN-Layers')
+_pyronn_layers_dir = os.path.join(os.path.dirname(__file__), 'PYRO-NN-Layers')
 _pyronn_layers_sources = glob.glob(os.path.join(_pyronn_layers_dir, '*.cc'))
 
 assert _pyronn_layers_sources, "Could not find the source files of PYRO-NN-Layers.\n" \
