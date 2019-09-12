@@ -5,6 +5,7 @@ full:
       - $ENABLE_NIGHTLY_BUILDS
   image: i10git.cs.fau.de:5005/pycodegen/pycodegen/full
   script:
+    - export PYSTENCILS_TENSORFLOW_NVCC_ARCH=35
     - git submodule update --init --recursive
     - python -m pip install -e .
     - python setup.py test
