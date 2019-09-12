@@ -25,7 +25,7 @@ Or if you downloaded this `repository <https://github.com/theHamsta/pyronn.layer
    pip install -e .
 
 It uses `pystencils-autodiff <https://github.com/pycodegen/pystencils_autodiff>`_ to automatically compile the C++/CUDA source files.
-The code gets automatically recompiled if you make changes to the source files in the folder `src/pyronn-layers/PYRO-NN-Layers <src/pyronn-layers/PYRO-NN-Layers>`_.
+The code gets automatically recompiled if you make changes to the source files in the folder `src/pyronn-layers/PYRO-NN-Layers <src/pyronn-layers>`_.
 
 If you prefer pre-build versions of PYRO-NN-Layers go to the `release page of PYRO-NN-Layers <https://github.com/csyben/PYRO-NN-Layers/releases>`_
 or download the latest artifacts from our CI (links only working if pipeline badge above is green):
