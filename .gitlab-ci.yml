@@ -1,0 +1,15 @@
+full:
+  stage: test
+  except:
+    variables:
+      - $ENABLE_NIGHTLY_BUILDS
+  image: i10git.cs.fau.de:5005/pycodegen/pycodegen/full
+  script:
+    - python -m pip install -e .
+    - python setup.py test
+  tags:
+    - docker
+  artifacts:
+    when: always
+    paths:
+      - htmlcov
