@@ -34,7 +34,7 @@ tf2:
   stage: test
   image: i10git.cs.fau.de:5005/pycodegen/pycodegen/full
   script:
-    - python -m pip install -U install tf-nightly-gpu
+    - python -m pip install -U tf-nightly-gpu
     - python -m pip install -U git+https://github.com/mabau/pystencils.git
     - python -m pip install -U git+https://i10git.cs.fau.de/pycodegen/pystencils_autodiff.git
     - export PYSTENCILS_TENSORFLOW_NVCC_ARCH=35
