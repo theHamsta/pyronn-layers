@@ -10,7 +10,6 @@
 pyronn-layers
 =============
 
-
 This is a Python wrapper around `PYRO-NN-Layers <https://github.com/csyben/PYRO-NN-Layers>`_.
 Install it via
 
@@ -24,7 +23,7 @@ Or if you downloaded this `repository <https://github.com/theHamsta/pyronn.layer
 
    pip install -e .
 
-It uses `pystencils-autodiff <https://github.com/pycodegen/pystencils_autodiff>`_ to automatically compile the C++/CUDA source files.
+It uses `pystencils-autodiff <https://github.com/theHamsta/pystencils_autodiff>`_ to automatically compile the C++/CUDA source files.
 The code gets automatically recompiled if you make changes to the source files in the folder `src/pyronn-layers/PYRO-NN-Layers <src/pyronn-layers>`_.
 
 If you prefer pre-build versions of PYRO-NN-Layers, go to the `release page of PYRO-NN-Layers <https://github.com/csyben/PYRO-NN-Layers/releases>`_
