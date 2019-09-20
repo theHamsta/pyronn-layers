@@ -3,4 +3,4 @@
 	url = https://github.com/csyben/PYRO-NN-Layers.git
 [submodule "tests/PYRO-NN"]
 	path = tests/PYRO-NN
-	url = https://github.com/seitz/PYRO-NN.git
+	url = https://github.com/theHamsta/PYRO-NN.git
