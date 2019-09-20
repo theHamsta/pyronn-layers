@@ -2,11 +2,11 @@
 import glob
 import os.path
 
-import pystencils_autodiff.tensorflow_jit
 import tensorflow as tf
 from pkg_resources import DistributionNotFound, get_distribution
 
 import pyronn_layers
+import pystencils_autodiff.tensorflow_jit
 
 try:
     # Change here if project is renamed and does not equal the package name
@@ -28,7 +28,7 @@ assert _pyronn_layers_sources, "Could not find the source files of PYRO-NN-Layer
 _pyronn_layers_module_file = pystencils_autodiff.tensorflow_jit.compile_sources_and_load(
     [],
     _pyronn_layers_sources,
-    additional_compile_flags=['-I' + _pyronn_layers_dir, '-DGOOGLE_CUDA'],
+    additional_compile_flags=['-I' + _pyronn_layers_dir, '-DGOOGLE_CUDA', '-arch=sm_35'],
     compile_only=True)  # TODO: msvc! \D
 _pyronn_layers_module = tf.load_op_library(_pyronn_layers_module_file)
 
