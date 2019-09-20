@@ -18,6 +18,7 @@ example_files_glob = join(dirname(__file__), 'PYRO-NN', 'examples', '**', '*.py'
 example_files = glob(example_files_glob, recursive=True)
 
 sys.path.append(join(dirname(__file__), 'PYRO-NN'))
+sys.path.append(join(dirname(__file__), 'PYRO-NN', 'example_learning_tensorflow'))
 
 
 @pytest.mark.parametrize('file', example_files)
