@@ -30,7 +30,7 @@ If you prefer pre-build versions of PYRO-NN-Layers, go to the `release page of P
 or download the latest artifacts from our CI (links only working if pipeline badge above is green):
 
   - `pyronn-layers.so for Ubuntu, tensorflow_gpu-1.14.0-cp37-cp37m-manylinux1_x86_64.whl <https://i10git.cs.fau.de/seitz/pyronn-layers/builds/artifacts/master/download?job=full>`_
-  - `pyronn-layers.so for Ubuntu, tf_nightly_gpu-1.14.0-cp37-cp37m-manylinux1_x86_64.whl <https://i10git.cs.fau.de/seitz/pyronn-layers/builds/artifacts/master/download?job=tf2>`_
+  - `pyronn-layers.so for Ubuntu, tf-nightly-gpu-2.0-preview.*-cp37-cp37m-manylinux1_x86_64.whl <https://i10git.cs.fau.de/seitz/pyronn-layers/builds/artifacts/master/download?job=tf2>`_
 
 
 Requirements
