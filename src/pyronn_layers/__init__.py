@@ -1,12 +1,19 @@
 # -*- coding: utf-8 -*-
 import glob
+import os
 import os.path
 
-import tensorflow as tf
-from pkg_resources import DistributionNotFound, get_distribution
+os.environ['PYSTENCILS_TENSORFLOW_NVCC_ARCH'] = '35'
 
-import pyronn_layers
-import pystencils_autodiff.tensorflow_jit
+try:
+    import tensorflow as tf
+    from pkg_resources import DistributionNotFound, get_distribution
+
+    import pyronn_layers
+    import pystencils_autodiff.tensorflow_jit
+except Exception as e:
+    raise e
+
 
 try:
     # Change here if project is renamed and does not equal the package name
@@ -23,7 +30,6 @@ _pyronn_layers_sources = glob.glob(os.path.join(_pyronn_layers_dir, '*.cc'))
 
 assert _pyronn_layers_sources, "Could not find the source files of PYRO-NN-Layers.\n" \
     "Did you check out the Git submodule (`git submodule update --init --recursive`)?"
-
 
 _pyronn_layers_module_file = pystencils_autodiff.tensorflow_jit.compile_sources_and_load(
     [],
