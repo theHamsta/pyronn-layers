@@ -28,7 +28,7 @@ assert _pyronn_layers_sources, "Could not find the source files of PYRO-NN-Layer
 _pyronn_layers_module_file = pystencils_autodiff.tensorflow_jit.compile_sources_and_load(
     [],
     _pyronn_layers_sources,
-    additional_compile_flags=['-I' + _pyronn_layers_dir],
+    additional_compile_flags=['-I' + _pyronn_layers_dir, '-DGOOGLE_CUDA=1'],
     additional_link_flags=['-lcudart', '-L/usr/local/cuda/lib64'],
     compile_only=True,
     link_cudart=True)  # TODO: msvc! \D
